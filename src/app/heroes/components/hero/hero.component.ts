@@ -27,7 +27,7 @@ export class HeroComponent {
   }
 
   public resetForm(): void {
-    // this.name = 'ironman';
+    this.name = 'ironman';
     this.age = 45;
     /*
       Its not recomend to use javascript in that way because it's no parte
