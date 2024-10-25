@@ -26,4 +26,14 @@ export class HeroComponent {
     this.age = 50;
   }
 
+  public resetForm(): void {
+    // this.name = 'ironman';
+    this.age = 45;
+    /*
+      Its not recomend to use javascript in that way because it's no parte
+      from angular live cycle
+    */
+    // document.querySelector('dd')!.textContent = 'David';
+  }
+
 }
