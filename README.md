@@ -1,4 +1,4 @@
 # ANGULAR FUNDAMENTALS
 
-### @NgModule + @Component + Directives (ngIf, ngFor) + ng-template
-### CommonModule + @Input()
+### @NgModule + @Component + Directives (*ngIf, *ngFor, [ngClass]) + ng-template
+### CommonModule + @Input() 
