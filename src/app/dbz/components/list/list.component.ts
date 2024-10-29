@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
@@ -7,6 +7,9 @@ import { Character } from '../../interfaces/character.interface';
   styleUrl: './list.component.css',
 })
 export class ListComponent {
+
+  @Output()
+  public onDeleteEmitter: EventEmitter<number> = new EventEmitter();
 
   // If this property with @input doesn't recieve data from parent component,
   // then It will used the default value
@@ -17,4 +20,10 @@ export class ListComponent {
       power: 10,
     }
   ];
+
+  public onDeleteCharacter(index: number): void {
+    console.log(index);
+    this.onDeleteEmitter.emit(index);
+  }
+
 }
