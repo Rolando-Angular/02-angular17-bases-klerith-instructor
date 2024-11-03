@@ -18,7 +18,6 @@ export class AddCharacterComponent {
 
   public emitCharacter(): void {
     // debugger;
-    console.log(this.character);
     if (!this.character.name) return;
 
     this.onNewCharacter.emit(this.character);

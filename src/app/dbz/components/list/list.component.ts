@@ -9,7 +9,7 @@ import { Character } from '../../interfaces/character.interface';
 export class ListComponent {
 
   @Output()
-  public onDeleteEmitter: EventEmitter<number> = new EventEmitter();
+  public onDeleteEmitter: EventEmitter<string> = new EventEmitter();
 
   // If this property with @input doesn't recieve data from parent component,
   // then It will used the default value
@@ -21,9 +21,11 @@ export class ListComponent {
     }
   ];
 
-  public onDeleteCharacter(index: number): void {
-    console.log(index);
-    this.onDeleteEmitter.emit(index);
+  public onDeleteCharacter(id?: string): void {
+    if (!id) {
+      return;
+    }
+    this.onDeleteEmitter.emit(id);
   }
 
 }
