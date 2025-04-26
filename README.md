@@ -13,4 +13,4 @@ ng serve
 ```
 
 ### DEPLOYED ON GITHUB PAGES
-https://rolando-angular.github.io/angular-bases-klerith-instructor/
+https://rolando-angular.github.io/02-angular17-bases-klerith-instructor/
